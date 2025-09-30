@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sight Word Splash!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="game-container">
+        <div id="start-screen">
+            <h1>Sight Word Splash! 🐠</h1>
+            <p>Help Finn the fish collect the sight word stars!</p>
+            <div id="level-selection">
+                <button class="level-btn" data-level="0">Level 1 (Pre-K)</button>
+                <button class="level-btn" data-level="1">Level 2 (Kindergarten)</button>
+                <button class="level-btn" data-level="2">Level 3 (1st Grade)</button>
+            </div>
+        </div>
+
+        <div id="game-screen" class="hidden">
+            <div id="header">
+                <div id="score-counter">Stars: 0 / 10</div>
+                <button id="speaker-btn">🔊</button>
+            </div>
+            <p id="audio-prompt">Listen for the word...</p>
+            <div id="stars-container">
+                </div>
+        </div>
+
+        <div id="end-screen" class="hidden">
+            <h2>Great Job!</h2>
+            <p>You collected all the stars!</p>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
